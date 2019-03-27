@@ -9,7 +9,6 @@ import { View, Platform } from 'react-native';
  */
 import { Component, RawHTML } from '@wordpress/element';
 import { withInstanceId, compose } from '@wordpress/compose';
-import { BlockFormatControls } from '@wordpress/block-editor';
 import { withSelect } from '@wordpress/data';
 import {
 	applyFormat,
@@ -36,6 +35,7 @@ import FormatEdit from './format-edit';
 import FormatToolbar from './format-toolbar';
 import { withBlockEditContext } from '../block-edit/context';
 import { ListEdit } from './list-edit';
+import BlockFormatControls from '../block-format-controls';
 
 import styles from './style.scss';
 
