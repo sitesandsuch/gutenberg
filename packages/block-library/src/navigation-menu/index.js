@@ -2,13 +2,13 @@
  * WordPress dependencies
  */
 import { __ } from '@wordpress/i18n';
-import { InnerBlocks } from '@wordpress/block-editor';
 
 /**
  * Internal dependencies
  */
 import metadata from './block.json';
 import edit from './edit';
+import save from './save';
 
 const { name } = metadata;
 export { metadata, name };
@@ -30,11 +30,6 @@ export const settings = {
 
 	edit,
 
-	save() {
-		return (
-			<ul>
-				<InnerBlocks.Content />
-			</ul>
-		);
-	},
+	save,
+
 };
