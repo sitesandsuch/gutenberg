@@ -68,11 +68,11 @@ function gutenberg_register_rest_widget_updater_routes() {
 }
 add_action( 'rest_api_init', 'gutenberg_register_rest_widget_updater_routes' );
 
-function gutenberg_register_rest_sidebars_routes() {
-	$sidebar_controller = new WP_REST_Sidebars_Controller();
-	$sidebar_controller->register_routes();
+function gutenberg_register_rest_widget_areas() {
+	$widget_areas_controller = new WP_REST_Widget_Areas();
+	$widget_areas_controller->register_routes();
 }
-add_action( 'rest_api_init', 'gutenberg_register_rest_sidebars_routes' );
+add_action( 'rest_api_init', 'gutenberg_register_rest_widget_areas' );
 /**
  * End: Include for phase 2
  */

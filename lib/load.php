@@ -18,8 +18,8 @@ if ( class_exists( 'WP_REST_Controller' ) ) {
 	if ( ! class_exists( 'WP_REST_Widget_Updater_Controller' ) ) {
 		require dirname( __FILE__ ) . '/class-wp-rest-widget-updater-controller.php';
 	}
-	if ( ! class_exists( 'WP_REST_Sidebars_Controller' ) ) {
-		require dirname( __FILE__ ) . '/class-wp-rest-sidebars-controller.php';
+	if ( ! class_exists( 'WP_REST_Widget_Areas' ) ) {
+		require dirname( __FILE__ ) . '/class-wp-rest-widget-areas-controller.php';
 	}
 	/**
 	* End: Include for phase 2
